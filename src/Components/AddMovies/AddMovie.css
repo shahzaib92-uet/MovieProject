@@ -1,0 +1,101 @@
+.movie-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Align form to the left as per template */
+    height: 100vh;
+    background-color: #062c3e;
+    padding-left: 5rem; /* Add padding to push the form away from the left side */
+  }
+  
+  .form-title {
+    padding: 0;
+    margin: 0;
+    color: white;
+    margin-bottom: 3rem; /* Adjusted for exact spacing as in the template */
+    font-size: 2.5rem; /* Match font size of the template */
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start; /* Align image container and form inputs at the top */
+  }
+  
+  .image-container {
+    width: 50%; /* Reduced width to match the template */
+    border: 2px dashed #fa5252;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px; /* Slightly increased height to match the template */
+    text-align: center;
+    color: white;
+    margin-left: 1rem; /* Adjusted for more precise alignment */
+  }
+  
+  .img-preview {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .form-inputs {
+    margin-left: 2rem; /* Create proper spacing from the image container */
+    width: 40%; /* Match width of input fields as per template */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Add spacing between input fields */
+  }
+  
+  .form-label {
+    color: white;
+  }
+  
+  .form-control {
+    background-color: #1b3c4d;
+    color: white;
+    border: none;
+    padding: 0.75rem; /* Adjust padding for input height */
+    border-radius: 5px; /* Add rounded corners to input fields */
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem; /* Adjust spacing above buttons */
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    padding: 0.5rem 2rem; /* Adjust button size for consistency */
+  }
+  
+  .btn-secondary {
+    background-color: #495057;
+    padding: 0.5rem 2rem; /* Match size of Cancel button */
+  }
+  
+  /* Extra Media Query for Responsiveness */
+  @media screen and (max-width: 1024px) {
+    .movie-form-container {
+      padding-left: 2rem; /* Reduce padding for smaller screens */
+    }
+  
+    .form-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-container {
+      width: 80%; /* Allow image container to take more space on smaller screens */
+      margin-left: 0;
+      margin-bottom: 2rem; /* Add space between image and form on smaller screens */
+    }
+  
+    .form-inputs {
+      width: 100%; /* Make inputs full-width on smaller screens */
+      margin-left: 0;
+    }
+  }
+  

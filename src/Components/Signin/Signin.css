@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #0d3b66, #224957);
+}
+
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  /* background: linear-gradient(to bottom, #0d3b66, #224957); */
+  background: #093545;
+
+}
+
+.signin-box {
+  background: #224957;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: 800;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #2b6777;
+  background-color: #1f4f66;
+  color: white;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #a8b1b9;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+
+.remember-me label {
+  color: #a8b1b9;
+  margin-left: 10px;
+}
+
+.login-button {
+  background-color: #00a896;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #028090;
+}
+
+/* Footer */
+.signin-footer {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.signin-footer img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  background: transparent;
+  opacity: 1;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Smaller screens (tablets, small laptops) */
+@media (max-width: 768px) {
+  .signin-box {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .signin-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+  }
+
+  .login-button {
+    padding: 10px 0;
+  }
+
+  .signin-footer img {
+    max-height: 100px;
+  }
+}

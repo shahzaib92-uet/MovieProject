@@ -1,0 +1,146 @@
+/* General page styling */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  /* background-color: #0d3b66; */
+  color: white;
+  background: #093545;
+}
+
+/* Container and header styling */
+.movie-list-container {
+  padding: 20px;
+}
+
+.movie-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.movie-list-header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+a {
+  /* Fix for the Link element styling */
+  text-decoration: none;
+  color: inherit;
+}
+
+.add-icon {
+  font-size: 28px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s;
+}
+
+.add-icon:hover {
+  color: #00a896; /* Change icon color on hover */
+}
+
+.logout-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #00a896;
+  border-color: #00a896;
+}
+
+/* Movie card grid */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 movies per row */
+  gap: 20px;
+}
+
+.movie-card {
+  background-color: #102a43;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px); /* Add a hover effect */
+}
+
+.movie-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: white;
+}
+
+.movie-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #a8b1b9;
+}
+
+.movie-image {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 0.5rem 2.5rem;
+  background-color: #00a896;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #046e63;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .movie-grid {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 3 movies per row for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-grid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 movies per row for small screens */
+  }
+
+  .movie-list-header h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-grid {
+    grid-template-columns: 1fr; /* 1 movie per row for very small screens */
+  }
+
+  .movie-list-header h1 {
+    font-size: 24px;
+  }
+}
